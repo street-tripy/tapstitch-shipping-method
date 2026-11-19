@@ -127,11 +127,22 @@ All routes are under `tapstitch-sm/v1` and require `manage_woocommerce`.
 * A Tapstitch account whose published shipping rates you price from. No API key is needed for the
   published rate table; the plugin reads the public rates endpoint and caches it.
 
+## Download
+
+The install-ready zip is on the [latest release](https://github.com/street-tripy/tapstitch-shipping-method/releases/latest):
+[`tapstitch-shipping-method-1.3.2.zip`](https://github.com/street-tripy/tapstitch-shipping-method/releases/latest/download/tapstitch-shipping-method-1.3.2.zip)
+— one folder inside, `tapstitch-shipping-method/`, so it uploads straight into WordPress.
+
 ## Install
+
+**In WordPress:** *Plugins → Add New → Upload Plugin* → choose the zip → *Install Now* → *Activate*.
+
+**By FTP:** unzip and upload the folder to
 
 ```
 wp-content/plugins/tapstitch-shipping-method/
 ```
+
 then activate, add the method to a shipping zone, map your shipping classes to supplier categories,
 and start in **preview** mode: it logs what it would charge, charges nothing, and you compare
 against the prices you are actually paying.

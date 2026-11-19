@@ -84,6 +84,8 @@ job WP-Cron runs daily).
 
 == Installation ==
 
+Easiest: download `tapstitch-shipping-method-1.3.2.zip` from the repository's [latest release](https://github.com/street-tripy/tapstitch-shipping-method/releases/latest) and use *Plugins → Add New → Upload Plugin* in WordPress (the zip contains one folder, `tapstitch-shipping-method/`).
+
 1. Upload `tapstitch-shipping-method` to `/wp-content/plugins/`.
 2. Activate it.
 3. *Settings → Shipping → [your zone] → Add shipping method → Tapstitch Shipping*.
