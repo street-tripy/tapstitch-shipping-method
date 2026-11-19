@@ -1,0 +1,18 @@
+# Build artefacts and local data never belong in the repo.
+*.zip
+*.log
+*.sql
+*.tar.gz
+
+# Store data: the supplier rate table is generated from your own account.
+data/seed-rates.json
+
+# Local tooling / OS noise
+vendor/
+node_modules/
+.wp-env.yml
+wp-cli.local.yml
+.env
+.DS_Store
+Thumbs.db
+desktop.ini

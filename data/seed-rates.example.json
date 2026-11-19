@@ -1,0 +1,18 @@
+{
+  "_comment": "EXAMPLE ONLY - synthetic numbers. Copy to data/seed-rates.json (git-ignored) and replace with the rates published for YOUR supplier account, or let the plugin fetch them (GET /tapstitch-sm/v1/probe, POST /tapstitch-sm/v1/refresh). Required per row: country, slug, line, first, add_min, add_max, time_min, time_max, weight. Optional: category, fulfillment. Amounts are dollars; the supplier API reports cents and the plugin converts them.",
+  "generated": "example",
+  "source": "your supplier's published shipping-rates endpoint",
+  "lane": "Standard",
+  "currency": "USD",
+  "note": "first = cost of the first item; add_min / add_max = published range for each additional item; weight in grams; transit days exclude production time.",
+  "rows": [
+    { "country": "US", "slug": "hoodies", "category": "Hoodies", "fulfillment": "USA", "line": "Standard", "time_min": 3, "time_max": 5, "first": 4.00, "add_min": 1.50, "add_max": 3.00, "weight": 700 },
+    { "country": "US", "slug": "hoodies", "category": "Hoodies", "fulfillment": "International", "line": "Standard", "time_min": 6, "time_max": 10, "first": 4.00, "add_min": 3.00, "add_max": 4.50, "weight": 700 },
+    { "country": "US", "slug": "t-shirts", "category": "T-Shirts", "fulfillment": "USA", "line": "Standard", "time_min": 3, "time_max": 5, "first": 3.00, "add_min": 1.00, "add_max": 2.00, "weight": 200 },
+    { "country": "US", "slug": "sweatpants", "category": "Sweatpants", "fulfillment": "USA", "line": "Standard", "time_min": 3, "time_max": 5, "first": 4.50, "add_min": 2.00, "add_max": 3.50, "weight": 600 },
+    { "country": "GB", "slug": "hoodies", "category": "Hoodies", "fulfillment": "International", "line": "Standard", "time_min": 6, "time_max": 10, "first": 6.00, "add_min": 3.50, "add_max": 5.00, "weight": 700 },
+    { "country": "GB", "slug": "t-shirts", "category": "T-Shirts", "fulfillment": "International", "line": "Standard", "time_min": 6, "time_max": 10, "first": 4.50, "add_min": 2.00, "add_max": 3.00, "weight": 200 },
+    { "country": "DE", "slug": "hoodies", "category": "Hoodies", "fulfillment": "International", "line": "Standard", "time_min": 6, "time_max": 11, "first": 6.50, "add_min": 3.50, "add_max": 5.50, "weight": 700 },
+    { "country": "AU", "slug": "hoodies", "category": "Hoodies", "fulfillment": "International", "line": "Standard", "time_min": 8, "time_max": 14, "first": 7.50, "add_min": 4.00, "add_max": 6.00, "weight": 700 }
+  ]
+}
